@@ -1,0 +1,376 @@
+{% extends "bootstrap/base.html" %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="ru"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="​We advise leaders on strategy, ​The idea that drives us as management consultants, Company Services">
+    <meta name="description" content="">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{url_for('.static', filename='nicepage.css')}}" media="screen">
+<link rel="stylesheet" href="{{url_for('.static', filename='Home.css')}}" media="screen">
+    <script class="u-script" type="text/javascript" src="{{url_for('.static', filename='jquery.js')}}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{{url_for('.static', filename='nicepage.js')}}" defer=""></script>
+    <meta name="generator" content="Nicepage 5.9.10, nicepage.com">
+    <meta name="referrer" content="origin">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i|PT+Sans:400,400i,700,700i">
+    
+    
+    
+    
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "Site6"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Home">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <body class="u-body u-xl-mode" data-lang="ru"><header class="u-clearfix u-header u-white u-header" id="sec-3a80"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <nav class="u-menu u-menu-hamburger u-offcanvas u-menu-1" data-responsive-from="XL">
+          <div class="menu-collapse">
+            <a class="u-button-style u-nav-link" href="#" style="padding: 10px 8px; font-size: calc(1em + 20px);">
+              <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-8a5e"></use></svg>
+              <svg class="u-svg-content" version="1.1" id="svg-8a5e" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-unstyled"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_main_page')}}">Главная</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_first_page')}}">Первый шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_second_page')}}">Второй шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_third_page')}}">Третий шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_fourth_page')}}">Четвертый шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_five_page')}}">Пятый шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_six_page')}}">Шестой шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_seven_page')}}" style="padding-right: 2px;">Седьмой шаг</a>
+</li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_main_page')}}">Главная</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_first_page')}}">Первый шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_second_page')}}">Второй шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_third_page')}}">Третий шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_fourth_page')}}">Четвертый шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_five_page')}}">Пятый шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_six_page')}}">Шестой шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_seven_page')}}">Седьмой шаг</a>
+</li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+      </div></header>
+    <section class="u-align-right u-clearfix u-palette-5-dark-3 u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-section-1" id="carousel_4e58">
+      <div class="u-clearfix u-layout-wrap u-layout-wrap-1">
+        <div class="u-layout">
+          <div class="u-layout-row">
+            <div class="u-align-left u-container-style u-layout-cell u-left-cell u-palette-5-dark-3 u-size-25 u-layout-cell-1">
+              <div class="u-container-layout u-container-layout-1">
+                <h2 class="u-align-left u-text u-text-1"> Студенческий проект</h2>
+                <h2 class="u-align-left u-text u-text-2"> ВыборЗаТобой</h2>
+                <a href="Home.html#sec-4615" class="u-active-white u-border-none u-btn u-btn-round u-button-style u-hover-white u-palette-2-base u-radius-2 u-text-active-black u-text-hover-black u-btn-1">свяжитесь с нами</a>
+              </div>
+            </div>
+            <div class="u-container-style u-image u-layout-cell u-right-cell u-size-35 u-image-1" data-image-width="1500" data-image-height="1162">
+              <div class="u-container-layout u-container-layout-2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-container-align-center u-white u-section-2" id="carousel_7146">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-align-center u-text u-text-default u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="0"> Поможем сделать правильный выбор!</h2>
+        <p class="u-align-center u-text u-text-palette-2-base u-text-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="250">
+          <span style="font-size: 1.875rem;">Финансовая грамотность - важно!</span>
+          <br>
+          <span class="u-text-black">Поможет любой социальной группе</span>
+        </p>
+        <div class="u-expanded-width u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-align-center u-container-align-center-lg u-container-align-center-md u-container-align-center-xs u-container-style u-list-item u-palette-2-base u-repeater-item u-shape-rectangle u-video-cover u-list-item-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
+              <div class="u-container-layout u-similar-container u-container-layout-1">
+                <img class="u-expanded-width u-image u-image-default u-image-1" src="{{url_for('.static', filename='images/stud.jpg')}}" alt="" data-image-width="818" data-image-height="657">
+                <h4 class="u-align-center u-text u-text-3">Студентам</h4>
+              </div>
+            </div>
+            <div class="u-align-center u-container-align-center u-container-style u-list-item u-palette-2-base u-repeater-item u-shape-rectangle u-list-item-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
+              <div class="u-container-layout u-similar-container u-container-layout-2">
+                <img class="u-expanded-width u-image u-image-default u-image-2" src="{{url_for('.static', filename='images/33.jpg')}}" alt="" data-image-width="825" data-image-height="920">
+                <h4 class="u-align-center u-text u-text-4">Работникам</h4>
+              </div>
+            </div>
+            <div class="u-align-center u-container-align-center-lg u-container-align-center-md u-container-align-center-sm u-container-align-center-xs u-container-style u-list-item u-palette-2-base u-repeater-item u-shape-rectangle u-video-cover u-list-item-3" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
+              <div class="u-container-layout u-similar-container u-container-layout-3">
+                <img class="u-expanded-width u-image u-image-default u-image-3" src="{{url_for('.static', filename='images/360_F_379248421_JcFcskGStAsyknm5RZyTsyBiOgWryjG81.jpg')}}" alt="" data-image-width="481" data-image-height="359">
+                <h4 class="u-align-center u-text u-text-5">Пенсионерам</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-white u-section-3" id="carousel_cb43">
+      <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1">
+        <div class="u-palette-2-base u-shape u-shape-rectangle u-shape-1"></div>
+        <div class="u-palette-2-base u-shape u-shape-rectangle u-shape-2"></div>
+        <img src="{{url_for('.static', filename='images/bussiness-people-working-team-office4.jpg')}}" alt="" class="u-image u-image-default u-image-1" data-image-width="1500" data-image-height="1000">
+        <div class="u-container-align-left u-container-style u-expanded-width-xs u-group u-white u-group-1">
+          <div class="u-container-layout u-container-layout-1">
+            <h3 class="u-align-left u-text u-text-palette-2-base u-text-1"> Изучили и собрали самые важные знания, необходимые именно вам в приянтии разумных фиансовых решений&nbsp;<br>
+            </h3>
+            <p class="u-align-left u-text u-text-2"> Помогаем вам в выборе банка, в соответствии с вашими целями и желаниями. Рассказываем как все работает изнутри, повышем уровень вашей финансовой грамотности.</p>
+          </div>
+        </div>
+        <h2 class="u-align-center u-text u-text-3" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="0"> О нашем проекте&nbsp;</h2>
+        <a href="{{url_for('load_fourth_page')}}" class="u-border-none u-btn u-btn-round u-button-style u-hover-white u-palette-2-base u-radius-6 u-btn-1"> Кредитный калькулятор</a>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-container-align-center u-white u-section-4" id="sec-32e1" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-expanded-width u-gallery u-layout-grid u-lightbox u-show-text-on-hover u-gallery-1">
+          <div class="u-gallery-inner u-gallery-inner-1">
+            <div class="u-effect-fade u-gallery-item">
+              <div class="u-back-slide" data-image-width="1002" data-image-height="1500">
+                <img class="u-back-image u-expanded" src="{{url_for('.static', filename='images/full_C03Asymr.jpg')}}">
+              </div>
+              <div class="u-over-slide u-shading u-over-slide-1">
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
+              </div>
+            </div>
+            <div class="u-effect-fade u-gallery-item">
+              <div class="u-back-slide" data-image-width="1000" data-image-height="1500">
+                <img class="u-back-image u-expanded" src="{{url_for('.static', filename='images/full_JqmSzjfb.jpg')}}">
+              </div>
+              <div class="u-over-slide u-shading u-over-slide-2">
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
+              </div>
+            </div>
+            <div class="u-effect-fade u-gallery-item">
+              <div class="u-back-slide" data-image-width="1500" data-image-height="997">
+                <img class="u-back-image u-expanded" src="{{url_for('.static', filename='images/full_jkqN2giA.jpg')}}">
+              </div>
+              <div class="u-over-slide u-shading u-over-slide-3">
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
+              </div>
+            </div>
+            <div class="u-effect-fade u-gallery-item">
+              <div class="u-back-slide" data-image-width="1200" data-image-height="1500">
+                <img class="u-back-image u-expanded" src="{{url_for('.static', filename='images/full_EUAmx9Em.jpg')}}">
+              </div>
+              <div class="u-over-slide u-shading u-over-slide-4">
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
+              </div>
+            </div>
+            <div class="u-effect-fade u-gallery-item">
+              <div class="u-back-slide" data-image-width="1500" data-image-height="995">
+                <img class="u-back-image u-expanded" src="{{url_for('.static', filename='images/full_kjOojYIE.jpg')}}">
+              </div>
+              <div class="u-over-slide u-shading u-over-slide-5">
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
+              </div>
+            </div>
+            <div class="u-effect-fade u-gallery-item">
+              <div class="u-back-slide" data-image-width="1500" data-image-height="1000">
+                <img class="u-back-image u-expanded" src="{{url_for('.static', filename='images/full_g98MVPoC.jpg')}}">
+              </div>
+              <div class="u-over-slide u-shading u-over-slide-6">
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xl u-align-left-xs u-clearfix u-container-align-center u-palette-5-dark-3 u-section-5" id="sec-21dc">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-align-center u-text u-text-default u-text-palette-2-base u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1500">Основные этапы</h2>
+        <div class="u-expanded-width u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-align-left u-container-align-center u-container-style u-list-item u-repeater-item u-shape-rectangle u-white u-list-item-1" data-animation-name="customAnimationIn" data-animation-duration="1500">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1">
+                <div class="u-container-style u-expanded-width u-group u-palette-2-base u-group-1">
+                  <div class="u-container-layout u-container-layout-2"><span class="u-align-center u-border-4 u-border-palette-2-light-2 u-file-icon u-icon u-icon-rounded u-radius-50 u-text-palette-2-base u-white u-icon-1" data-animation-name="customAnimationIn" data-animation-duration="1750" data-animation-delay="500"><img src="{{url_for('.static', filename='images/8067945-836c2428.png')}}" alt=""></span>
+                  </div>
+                </div>
+                <a href="{{url_for('load_first_page')}}" class="u-active-none u-align-center u-border-2 u-border-active-black u-border-hover-black u-border-no-left u-border-no-right u-border-no-top u-border-palette-2-base u-btn u-button-style u-hover-none u-none u-text-active-palette-2-base u-text-body-color u-text-hover-palette-2-base u-btn-1">Перейти</a>
+                <p class="u-align-center u-text u-text-grey-40 u-text-2"> Определить вид кредита</p>
+              </div>
+            </div>
+            <div class="u-align-left u-container-style u-list-item u-repeater-item u-shape-rectangle u-white u-list-item-2" data-animation-name="customAnimationIn" data-animation-duration="1500">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3">
+                <div class="u-container-style u-expanded-width u-group u-palette-2-base u-group-2">
+                  <div class="u-container-layout u-container-layout-4"><span class="u-align-center u-border-4 u-border-palette-2-light-2 u-file-icon u-icon u-icon-rounded u-radius-50 u-text-palette-2-base u-white u-icon-2" data-animation-name="customAnimationIn" data-animation-duration="1750" data-animation-delay="500"><img src="{{url_for('.static', filename='images/9387445-268cf07f.png')}}" alt=""></span>
+                  </div>
+                </div>
+                <a href="{{url_for('load_second_page')}}" class="u-active-none u-align-center u-border-2 u-border-active-black u-border-hover-black u-border-no-left u-border-no-right u-border-no-top u-border-palette-2-base u-btn u-button-style u-hover-none u-none u-text-active-palette-2-base u-text-body-color u-text-hover-palette-2-base u-btn-2"> Перейти</a>
+                <p class="u-align-center u-text u-text-grey-40 u-text-3"> Определить срок и сумму</p>
+              </div>
+            </div>
+            <div class="u-align-left u-container-align-center u-container-style u-list-item u-repeater-item u-shape-rectangle u-white u-list-item-3" data-animation-name="customAnimationIn" data-animation-duration="1500">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-5">
+                <div class="u-container-style u-expanded-width u-group u-palette-2-base u-group-3">
+                  <div class="u-container-layout u-container-layout-6"><span class="u-align-center u-border-4 u-border-palette-2-light-2 u-file-icon u-icon u-icon-rounded u-radius-50 u-text-palette-2-base u-white u-icon-3" data-animation-name="customAnimationIn" data-animation-duration="1750" data-animation-delay="500"><img src="{{url_for('.static', filename='images/9387456-114ec165.png')}}" alt=""></span>
+                  </div>
+                </div>
+                <a href="{{url_for('load_third_page')}}" class="u-active-none u-align-center u-border-2 u-border-active-black u-border-hover-black u-border-no-left u-border-no-right u-border-no-top u-border-palette-2-base u-btn u-button-style u-hover-none u-none u-text-active-palette-2-base u-text-body-color u-text-hover-palette-2-base u-btn-3"> Перейти</a>
+                <p class="u-align-center u-text u-text-grey-40 u-text-4"> Изучить банки и ставки</p>
+              </div>
+            </div>
+            <div class="u-align-left u-container-align-center u-container-style u-list-item u-repeater-item u-shape-rectangle u-white u-list-item-4" data-animation-name="customAnimationIn" data-animation-duration="1500">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-7">
+                <div class="u-container-style u-expanded-width u-group u-palette-2-base u-group-4">
+                  <div class="u-container-layout u-container-layout-8"><span class="u-align-center u-border-4 u-border-palette-2-light-2 u-file-icon u-icon u-icon-rounded u-radius-50 u-text-palette-2-base u-white u-icon-4" data-animation-name="customAnimationIn" data-animation-duration="1750" data-animation-delay="500"><img src="{{url_for('.static', filename='images/9387467-ae119167.png')}}" alt=""></span>
+                  </div>
+                </div>
+                <a href="{{url_for('load_fourth_page')}}" class="u-active-none u-align-center u-border-2 u-border-active-black u-border-hover-black u-border-no-left u-border-no-right u-border-no-top u-border-palette-2-base u-btn u-button-style u-hover-none u-none u-text-active-palette-2-base u-text-body-color u-text-hover-palette-2-base u-btn-4"> Перейти</a>
+                <p class="u-align-center u-text u-text-grey-40 u-text-5"> Рассчитать ежемесячный платеж</p>
+              </div>
+            </div>
+            <div class="u-align-left u-container-align-center u-container-style u-list-item u-repeater-item u-shape-rectangle u-white u-list-item-5" data-animation-name="customAnimationIn" data-animation-duration="1500">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-9">
+                <div class="u-container-style u-expanded-width u-group u-palette-2-base u-group-5">
+                  <div class="u-container-layout u-container-layout-10"><span class="u-align-center u-border-4 u-border-palette-2-light-2 u-file-icon u-icon u-icon-rounded u-radius-50 u-text-palette-2-base u-white u-icon-5" data-animation-name="customAnimationIn" data-animation-duration="1750" data-animation-delay="500"><img src="{{url_for('.static', filename='images/9387478-3809d5ca.png')}}" alt=""></span>
+                  </div>
+                </div>
+                <a href="{{url_for('load_five_page')}}" class="u-active-none u-align-center u-border-2 u-border-active-black u-border-hover-black u-border-no-left u-border-no-right u-border-no-top u-border-palette-2-base u-btn u-button-style u-hover-none u-none u-text-active-palette-2-base u-text-body-color u-text-hover-palette-2-base u-btn-5"> Перейти</a>
+                <p class="u-align-center u-text u-text-grey-40 u-text-6"> Изучить условия страхования</p>
+              </div>
+            </div>
+            <div class="u-align-left u-container-align-center u-container-style u-list-item u-repeater-item u-shape-rectangle u-white u-list-item-6" data-animation-name="customAnimationIn" data-animation-duration="1500">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-11">
+                <div class="u-container-style u-expanded-width u-group u-palette-2-base u-group-6">
+                  <div class="u-container-layout u-container-layout-12"><span class="u-align-center u-border-4 u-border-palette-2-light-2 u-file-icon u-icon u-icon-rounded u-radius-50 u-text-palette-2-base u-white u-icon-6" data-animation-name="customAnimationIn" data-animation-duration="1750" data-animation-delay="500"><img src="{{url_for('.static', filename='images/9387489-75e48273.png')}}" alt=""></span>
+                  </div>
+                </div>
+                <a href="{{url_for('load_six_page')}}" class="u-active-none u-align-center u-border-2 u-border-active-black u-border-hover-black u-border-no-left u-border-no-right u-border-no-top u-border-palette-2-base u-btn u-button-style u-hover-none u-none u-text-active-palette-2-base u-text-body-color u-text-hover-palette-2-base u-btn-6"> Перейти</a>
+                <p class="u-align-center u-text u-text-grey-40 u-text-7"> Изучить условия досрочного погашения</p>
+              </div>
+            </div>
+            <div class="u-align-left u-container-align-center u-container-style u-list-item u-repeater-item u-shape-rectangle u-white u-list-item-7" data-animation-name="customAnimationIn" data-animation-duration="1500">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-13">
+                <div class="u-container-style u-expanded-width u-group u-palette-2-base u-group-7">
+                  <div class="u-container-layout u-container-layout-14"><span class="u-align-center u-border-4 u-border-palette-2-light-2 u-file-icon u-icon u-icon-rounded u-radius-50 u-text-palette-2-base u-white u-icon-7" data-animation-name="customAnimationIn" data-animation-duration="1750" data-animation-delay="500"><img src="{{url_for('.static', filename='images/9387500-4540c0b5.png')}}" alt=""></span>
+                  </div>
+                </div>
+                <a href="{{url_for('load_seven_page')}}" class="u-active-none u-align-center u-border-2 u-border-active-black u-border-hover-black u-border-no-left u-border-no-right u-border-no-top u-border-palette-2-base u-btn u-button-style u-hover-none u-none u-text-active-palette-2-base u-text-body-color u-text-hover-palette-2-base u-btn-7"> Перейти</a>
+                <p class="u-align-center u-text u-text-grey-40 u-text-8"> Принять решение</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-expanded-width-xl u-palette-5-dark-3 u-section-6" id="sec-4615">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div class="u-clearfix u-gutter-0 u-layout-wrap u-layout-wrap-1">
+          <div class="u-gutter-0 u-layout">
+            <div class="u-layout-row">
+              <div class="u-align-left u-container-style u-layout-cell u-shape-rectangle u-size-27-lg u-size-27-md u-size-27-sm u-size-27-xs u-size-30-xl u-layout-cell-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
+                <div class="u-container-layout u-container-layout-1">
+                  <h2 class="u-align-center u-text u-text-default u-text-palette-2-base u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1500"> Мы рады вам помочь </h2>
+                  <h2 class="u-align-center u-text u-text-default u-text-palette-2-base u-text-2" data-animation-name="customAnimationIn" data-animation-duration="1500"> Оставьте отзыв </h2>
+                  <p class="u-align-left u-text u-text-3"> Будем признательны, если вы расскажет нам о своем опыте. Это поможет нам стать лучше.</p>
+                  <p class="u-align-left u-text u-text-4">
+                    <span style="font-weight: 700;">Адрес:</span><b>
+                      <span style="font-weight: 400;">г.</span></b> &nbsp;<b>
+                      <span style="font-weight: 400;">Воронеж, Университетская пл., д. 1</span></b>
+                    <br>
+                    <span style="font-weight: 700;">Телефон:</span> +1 234-567-890 <br>
+                    <br>
+                  </p>
+                </div>
+              </div>
+              <div class="u-align-left u-container-style u-layout-cell u-palette-2-base u-shape-rectangle u-size-30-xl u-size-33-lg u-size-33-md u-size-33-sm u-size-33-xs u-layout-cell-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
+                <div class="u-container-layout u-container-layout-2">
+                  <div class="u-form u-form-1">
+                    <form action="https://forms.nicepagesrv.com/v2/form/process" class="u-clearfix u-form-spacing-30 u-form-vertical u-inner-form" style="padding: 0px;" source="email" name="form">
+                      <div class="u-form-group u-form-name">
+                        <label for="name-3b9a" class="u-form-control-hidden u-label">Name</label>
+                        <input type="text" placeholder="Имя" id="name-3b9a" name="name" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle u-input-1" required="" wfd-id="id733">
+                      </div>
+                      <div class="u-form-email u-form-group">
+                        <label for="email-3b9a" class="u-form-control-hidden u-label">Email</label>
+                        <input type="email" placeholder="Почта" id="email-3b9a" name="email" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle u-input-2" required="" wfd-id="id734">
+                      </div>
+                      <div class="u-form-group u-form-group-3">
+                        <label for="text-160a" class="u-form-control-hidden u-label"></label>
+                        <input type="text" id="text-160a" name="text" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle u-input-3" placeholder="Тема" wfd-id="id735">
+                      </div>
+                      <div class="u-form-group u-form-message">
+                        <label for="message-3b9a" class="u-form-control-hidden u-label">Message</label>
+                        <textarea placeholder="Сообщение" rows="4" cols="50" id="message-3b9a" name="message" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle u-input-4" required=""></textarea>
+                      </div>
+                      <div class="u-align-left u-form-group u-form-submit">
+                        <a href="#" class="u-active-palette-2-light-3 u-border-none u-btn u-btn-submit u-button-style u-hover-palette-2-light-3 u-text-active-black u-text-hover-black u-text-palette-2-base u-white u-btn-1">Оставить отзыв</a>
+                        <input type="submit" value="submit" class="u-form-control-hidden" wfd-id="id736">
+                      </div>
+                      <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
+                      <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
+                      <input type="hidden" value="" name="recaptchaResponse" wfd-id="id737">
+                      <input type="hidden" name="formServices" value="919dd58454b268e3d5949f67e61de072">
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-86f6"><div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">Дипломный проект</p>
+      </div></footer>
+    <section class="u-backlink u-clearfix u-grey-80">
+      <a class="u-link" href="https://nicepage.com/templates" target="_blank">
+        <span>Free Templates</span>
+      </a>
+      <p class="u-text">
+        <span>created with</span>
+      </p>
+      <a class="u-link" href="https://nicepage.com/html-website-builder" target="_blank">
+        <span>HTML Designer</span>
+      </a>. 
+    </section>
+  
+</body></html>
+
+{% endblock %}

@@ -1,0 +1,169 @@
+{% extends "bootstrap/base.html" %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="ru"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <meta name="description" content="">
+    <title>StepTwo</title>
+        <link rel="stylesheet" href="{{url_for('.static', filename='nicepage.css')}}" media="screen">
+<link rel="stylesheet" href="{{url_for('.static', filename='StepTwo.css')}}" media="screen">
+    <link rel="stylesheet" href="{{url_for('.static', filename='main.css')}}" media="screen">
+    <script class="u-script" type="text/javascript" src="{{url_for('.static', filename='jquery.js')}}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{{url_for('.static', filename='nicepage.js')}}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{{url_for('.static', filename='main.js')}}" defer=""></script>
+
+    <meta name="generator" content="Nicepage 5.9.10, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i|PT+Sans:400,400i,700,700i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i|PT+Sans:400,400i,700,700i">
+    
+    
+    
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "Site6"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="StepTwo">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <body class="u-body u-xl-mode" data-lang="ru"><header class="u-clearfix u-header u-white u-header" id="sec-3a80"><div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-sheet-1">
+        <nav class="u-menu u-menu-hamburger u-offcanvas u-menu-1" data-responsive-from="XL">
+          <div class="menu-collapse">
+            <a class="u-button-style u-nav-link" href="#" style="padding: 10px 8px; font-size: calc(1em + 20px);">
+              <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-8a5e"></use></svg>
+              <svg class="u-svg-content" version="1.1" id="svg-8a5e" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-unstyled"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_main_page')}}">Главная</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_first_page')}}">Первый шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_second_page')}}">Второй шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_third_page')}}">Третий шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_fourth_page')}}">Четвертый шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_five_page')}}">Пятый шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_six_page')}}">Шестой шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_seven_page')}}" style="padding-right: 2px;">Седьмой шаг</a>
+</li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_main_page')}}">Главная</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_first_page')}}">Первый шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_second_page')}}">Второй шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_third_page')}}">Третий шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_fourth_page')}}">Четвертый шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_five_page')}}">Пятый шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_six_page')}}">Шестой шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_seven_page')}}">Седьмой шаг</a>
+</li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+      </div></header> 
+    <section class="u-clearfix u-container-align-center u-palette-5-dark-3 u-section-1" src="" id="carousel_e34c">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div class="u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
+          <div class="u-gutter-0 u-layout">
+            <div class="u-layout-col">
+              <div class="u-size-30">
+                <div class="u-layout-row">
+                  <div class="u-container-style u-layout-cell u-left-cell u-right-cell u-size-60 u-layout-cell-1">
+                    <div class="u-container-layout u-container-layout-1">
+                      <h2 class="u-text u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1250"> Определиться со сроком и суммой - второй этап</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="u-size-30">
+                <div class="u-layout-row">
+                  <div class="u-align-left u-container-style u-layout-cell u-left-cell u-palette-2-base u-size-10 u-layout-cell-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
+                    <div class="u-container-layout u-container-layout-2">
+                      <h2 class="u-text u-text-2"> Сумма и срок</h2>
+                    </div>
+                  </div>
+                  <div class="u-container-style u-layout-cell u-size-50 u-layout-cell-3" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
+                    <div class="u-container-layout u-container-layout-3">
+                      <h5 class="u-custom-font u-text u-text-font u-text-3">
+                        <span class="u-text-palette-2-base">Сумма и срок</span> кредита зависит от стоимости вашей цели и ваших возможностей. На этом этапе оцените свои финансовые возмоности.<br>Если вы берете кредит, расчитывая только на себя, то ваш <span class="u-text-palette-2-base">ежемесячный доход</span> умножте на 0,3 (30%). Эта сумма и будет вашей максимальной ежемесячной выплатой по кредиту. Если взять процент выше, то такой выбор поставит вас в сложное положение, в случае снижения дохода. Вы определили максимальную ежемесячную сумму, она будет уменьшаться в зависимости от ваших ежемесячных расходов.<br>Так же стоит подумать о рисках, исходя из худшего сценария. Например, вероятность увольнения, сокращение заработной платы, какие-либо значимые расходы в ближайшем будущем.<br>
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-left u-clearfix u-white u-section-2" id="carousel_3733">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-align-center u-text u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500"> Калькулятор максимальной ежемесячной выплаты</h2>
+								<label class="checkbox-wrapper title-bold section-title .section-title--vertical-center">
+							<span class="title__inline">Сумма вашего ежемесячного дохода:</span>
+							<input type="number" min="0" max="500000" value="30000" id="square-input" step="500" class="title__inline input-short" />
+							<span class="title__inline">рублей</span>
+						</label>
+						<input type="range" id="square-range" class="range-input" min="0" max="300000" value="30000" step="500" />
+						<label class="checkbox-wrapper title-bold section-title .section-title--vertical-center">
+							<span class="title__inline">Максимальный ежемесячный платеж:&nbsp; </span>
+							<span id="total-price">0</span>
+							&nbsp;рублей
+						</label>
+        <p class="u-align-left u-text u-text-2" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""> Как только вы решили сколько ежемесячно готовы отдавать, вам нужно понять в течении какого периода вы готовы это делать. Это во многом зависит от вида кредита, выбранного вами.</p>
+      </div>
+    </section>
+    <section class="u-clearfix u-white u-section-3" id="carousel_56d9">
+      <div class="u-expanded-width u-palette-5-dark-3 u-shape u-shape-rectangle u-shape-1"></div>
+      <img class="u-image u-image-default u-image-1" alt="" data-image-width="1200" data-image-height="779" src="{{url_for('.static', filename='images/14.jpg')}}" data-animation-name="customAnimationIn" data-animation-duration="1500">
+      <div class="u-align-left u-container-align-left u-container-style u-group u-shape-rectangle u-white u-group-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
+        <div class="u-container-layout u-container-layout-1">
+          <h3 class="u-align-left u-text u-text-1"> Срок</h3>
+          <p class="u-align-left u-text u-text-2" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""> Чем меньше срок вашего кредита, тем меньше переплата. Все зависит от ваших возможностей, чем больше вы готовы платить ежемесячно, тем меньший срок стоит выбрать. Ищите баланс.</p>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-grey-10 u-section-4" id="sec-1c05">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div class="u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-align-left u-container-style u-list-item u-radius-27 u-repeater-item u-shape-round u-white u-list-item-1">
+              <div class="u-container-layout u-similar-container u-container-layout-1">
+                <h4 class="u-text u-text-default u-text-palette-2-base u-text-1"> Вы определились со сроком и суммой, которые нужны вам.&nbsp;&nbsp;</h4>
+                <p class="u-text u-text-default u-text-2"> Но банки сами ставят ограничения по своим предложениям, в зависимости от типа кредита, вашего уровня дохода, платёжной нагрузки и кредитной истории.<br>Если хотите сумму кредита, подтвердите дополнительный доход, предоставьте залог или найдите созаемщиков и поручителей. Докажите банку, что сможете вернуть деньги.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-grey-10 u-section-5" id="sec-6a13">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <a href="{{url_for('load_first_page')}}" class="u-border-none u-btn u-button-style u-hover-white u-palette-2-base u-btn-1">Первый шаг</a>
+        <a href="{{url_for('load_third_page')}}" class="u-border-none u-btn u-button-style u-hover-white u-palette-2-base u-btn-2">Третий шаг</a>
+      </div>
+    </section>
+    
+    
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-86f6"><div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">Дипломный проект</p>
+      </div></footer>
+
+  
+</body></html>
+
+{% endblock %}

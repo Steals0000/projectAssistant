@@ -1,0 +1,206 @@
+{% extends "bootstrap/base.html" %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="ru"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>StepSeven</title>
+    <link rel="stylesheet" href="{{url_for('.static', filename='nicepage.css')}}" media="screen">
+<link rel="stylesheet" href="{{url_for('.static', filename='StepSeven.css')}}" media="screen">
+    <script class="u-script" type="text/javascript" src="{{url_for('.static', filename='jquery.js')}}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{{url_for('.static', filename='nicepage.js')}}" defer=""></script>
+    <meta name="generator" content="Nicepage 5.9.10, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i|PT+Sans:400,400i,700,700i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i|PT+Sans:400,400i,700,700i">
+    
+    
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "Site6"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="StepSeven">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <body class="u-body u-xl-mode" data-lang="ru"><header class="u-clearfix u-header u-white u-header" id="sec-3a80"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <nav class="u-menu u-menu-hamburger u-offcanvas u-menu-1" data-responsive-from="XL">
+          <div class="menu-collapse">
+            <a class="u-button-style u-nav-link" href="#" style="padding: 10px 8px; font-size: calc(1em + 20px);">
+              <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-8a5e"></use></svg>
+              <svg class="u-svg-content" version="1.1" id="svg-8a5e" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-unstyled"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_main_page')}}">Главная</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_first_page')}}">Первый шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_second_page')}}">Второй шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_third_page')}}">Третий шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_fourth_page')}}">Четвертый шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_five_page')}}">Пятый шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_six_page')}}">Шестой шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_seven_page')}}" style="padding-right: 2px;">Седьмой шаг</a>
+</li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_main_page')}}">Главная</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_first_page')}}">Первый шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_second_page')}}">Второй шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_third_page')}}">Третий шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_fourth_page')}}">Четвертый шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_five_page')}}">Пятый шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_six_page')}}">Шестой шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_seven_page')}}">Седьмой шаг</a>
+</li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+      </div></header> 
+    <section class="u-clearfix u-container-align-center u-palette-5-dark-3 u-section-1" src="" id="sec-e354">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div class="u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
+          <div class="u-gutter-0 u-layout">
+            <div class="u-layout-col">
+              <div class="u-size-30">
+                <div class="u-layout-row">
+                  <div class="u-container-style u-layout-cell u-left-cell u-right-cell u-size-60 u-layout-cell-1">
+                    <div class="u-container-layout u-container-layout-1">
+                      <h2 class="u-text u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1250"> Изучить условия страхования&nbsp;- пятый этап</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="u-size-30">
+                <div class="u-layout-row">
+                  <div class="u-align-left u-container-style u-layout-cell u-left-cell u-palette-2-base u-size-15 u-layout-cell-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
+                    <div class="u-container-layout u-container-layout-2">
+                      <h2 class="u-text u-text-2"> Процентная ставка</h2>
+                    </div>
+                  </div>
+                  <div class="u-container-style u-layout-cell u-size-45 u-layout-cell-3" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
+                    <div class="u-container-layout u-container-layout-3">
+                      <h5 class="u-custom-font u-text u-text-font u-text-3">
+                        <span class="u-text-palette-2-base"> Страхование кредита </span>- это заключение договора, по которому страховая компания погасит вашу задолжность перед банком при наступлении страхового случая, прописанного в договоре. Страховка позволяет защитить ваше иммущество, которое может быть использовано для возмещения ущерба.<br>
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-2" id="sec-7ff1">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h2 class="u-align-left u-text u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500"> Претендовать на выплаты можно в следующих случаях:</h2>
+        <ul class="u-align-left u-custom-list u-text u-text-2">
+          <li>
+            <div class="u-list-icon u-text-palette-2-base">
+              <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-4f22" style="font-size: 1em; margin: -1em;"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+            </div>Потеря здоровья
+          </li>
+          <li>
+            <div class="u-list-icon u-text-palette-2-base">
+              <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-4f22" style="font-size: 1em; margin: -1em;"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+            </div>Риск жизни
+          </li>
+          <li>
+            <div class="u-list-icon u-text-palette-2-base">
+              <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-4f22" style="font-size: 1em; margin: -1em;"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+            </div>Потери права на собственность<br>
+          </li>
+          <li>
+            <div class="u-list-icon u-text-palette-2-base">
+              <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-4f22" style="font-size: 1em; margin: -1em;"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+            </div>Увольнение<br>
+          </li>
+          <li>
+            <div class="u-list-icon u-text-palette-2-base">
+              <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-4f22" style="font-size: 1em; margin: -1em;"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+            </div>Пожары, наводнения и т.д.<br>
+          </li>
+        </ul>
+        <p class="u-align-left u-text u-text-3"> Кредиты на новую машину подразумевают КАСКО (максимальную страховку машины от повреждений и угона), иногда бакн соглашается на ОСАГО ( только страхование ответственности водителя).<br>Ипотека подразумевает, как правило, страхование жилья от разрушений или титульное страхование (страхование риска утраты права собственности на недвижимость).
+        </p>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-3" id="carousel_a208">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-align-left u-text u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500"> Обязательна ли страховка?</h2>
+        <p class="u-align-left u-text u-text-2"> При ипотеке - да. В остальных случаях - нет. Обратите внимание, что банку запрещено навязывать данную услугу, вы можете отказаться. Более того, сотрудник должен сообщить, что от страхования можно отказаться, а также подробно рассказать о фактических тратах на полис.</p>
+        <h2 class="u-align-left u-text u-text-3" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500"> Если вы откажитесь от страховки:</h2>
+        <ul class="u-align-left u-custom-list u-text u-text-4">
+          <li>
+            <div class="u-list-icon u-text-palette-2-base">
+              <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-4f22" style="font-size: 1em; margin: -1em;"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+            </div>Ничего не произойдёт
+          </li>
+          <li>
+            <div class="u-list-icon u-text-palette-2-base">
+              <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-4f22" style="font-size: 1em; margin: -1em;"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+            </div> Банк может отказать вам
+          </li>
+          <li>
+            <div class="u-list-icon u-text-palette-2-base">
+              <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-4f22" style="font-size: 1em; margin: -1em;"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+            </div> Предложат менее выгодные условия
+          </li>
+        </ul>
+        <p class="u-align-left u-text u-text-5"> Если вы согласились на стаховку и передумали, вы можете отказаться от неё в течении 14 дней ( только если за это время не наступил страховой случай). Но внимательно перечитайте кредитный договор. Может увеличися ставка или данное действие противоречит условиям договора. Не отказывайтесь от страховки, подумайте нужна ли она вам, поможет ли она уменьшить процент и так далее.</p>
+        <h2 class="u-align-left u-text u-text-6" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500"> При досрочном погашении кредита:</h2>
+        <ul class="u-align-left u-custom-list u-text u-text-7">
+          <li>
+            <div class="u-list-icon u-text-palette-2-base">
+              <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-4f22" style="font-size: 1em; margin: -1em;"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+            </div>Автоматически аннулируется договор вместе с кредитным
+          </li>
+          <li>
+            <div class="u-list-icon u-text-palette-2-base">
+              <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-4f22" style="font-size: 1em; margin: -1em;"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+            </div> Страховые обязательства действуют до наступления страхового случая
+          </li>
+        </ul>
+        <p class="u-align-left u-text u-text-8"> Если в договоре предусмотрен возврат премии при досрочном погашении, то обратитесь в страховую компанию. Если при наличие этого пункта отказываются платить – обращаться в суд. Закон на вашей стороне.</p>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-4" id="sec-c21a">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <a href="{{url_for('load_six_page')}}" class="u-border-none u-btn u-button-style u-hover-white u-palette-2-base u-btn-1">Шестой шаг</a>
+        <a href="{{url_for('load_main_page')}}" class="u-border-none u-btn u-button-style u-hover-white u-palette-2-base u-btn-2">Главная</a>
+      </div>
+    </section>
+    
+    
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-86f6"><div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">Дипломный проект</p>
+      </div></footer>
+    <section class="u-backlink u-clearfix u-grey-80">
+      <a class="u-link" href="https://nicepage.com/html-templates" target="_blank">
+        <span>HTML Website Templates</span>
+      </a>
+      <p class="u-text">
+        <span>created with</span>
+      </p>
+      <a class="u-link" href="https://nicepage.cloud" target="_blank">
+        <span>Best Website Builder</span>
+      </a>. 
+    </section>
+  
+</body></html>
+
+{% endblock %}

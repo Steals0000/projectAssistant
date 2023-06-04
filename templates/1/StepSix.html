@@ -1,0 +1,213 @@
+{% extends "bootstrap/base.html" %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="ru"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>StepSix</title>
+    <link rel="stylesheet" href="{{url_for('.static', filename='nicepage.css')}}" media="screen">
+<link rel="stylesheet" href="{{url_for('.static', filename='StepSix.css')}}" media="screen">
+    <script class="u-script" type="text/javascript" src="{{url_for('.static', filename='jquery.js')}}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{{url_for('.static', filename='nicepage.js')}}" defer=""></script>
+    <meta name="generator" content="Nicepage 5.9.10, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i|PT+Sans:400,400i,700,700i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i|PT+Sans:400,400i,700,700i">
+    
+    
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "Site6"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="StepSix">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <body class="u-body u-xl-mode" data-lang="ru"><header class="u-clearfix u-header u-white u-header" id="sec-3a80"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <nav class="u-menu u-menu-hamburger u-offcanvas u-menu-1" data-responsive-from="XL">
+          <div class="menu-collapse">
+            <a class="u-button-style u-nav-link" href="#" style="padding: 10px 8px; font-size: calc(1em + 20px);">
+              <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-8a5e"></use></svg>
+              <svg class="u-svg-content" version="1.1" id="svg-8a5e" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-unstyled"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_main_page')}}">Главная</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_first_page')}}">Первый шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_second_page')}}">Второй шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_third_page')}}">Третий шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_fourth_page')}}">Четвертый шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_five_page')}}">Пятый шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_six_page')}}">Шестой шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_seven_page')}}" style="padding-right: 2px;">Седьмой шаг</a>
+</li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_main_page')}}">Главная</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_first_page')}}">Первый шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_second_page')}}">Второй шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_third_page')}}">Третий шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_fourth_page')}}">Четвертый шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_five_page')}}">Пятый шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_six_page')}}">Шестой шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_seven_page')}}">Седьмой шаг</a>
+</li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+      </div></header> 
+    <section class="u-clearfix u-container-align-center u-palette-5-dark-3 u-section-1" src="" id="sec-e354">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div class="u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
+          <div class="u-gutter-0 u-layout">
+            <div class="u-layout-col">
+              <div class="u-size-30">
+                <div class="u-layout-row">
+                  <div class="u-container-style u-layout-cell u-left-cell u-right-cell u-size-60 u-layout-cell-1">
+                    <div class="u-container-layout u-container-layout-1">
+                      <h2 class="u-text u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1250"> Условия досрочного погашения&nbsp;- шестой этап</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="u-size-30">
+                <div class="u-layout-row">
+                  <div class="u-align-left u-container-style u-layout-cell u-left-cell u-palette-2-base u-size-15 u-layout-cell-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
+                    <div class="u-container-layout u-container-layout-2">
+                      <h2 class="u-text u-text-2"> Досрочное погашение</h2>
+                    </div>
+                  </div>
+                  <div class="u-container-style u-layout-cell u-size-45 u-layout-cell-3" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
+                    <div class="u-container-layout u-container-layout-3">
+                      <h5 class="u-custom-font u-text u-text-font u-text-3">
+                        <span class="u-text-palette-2-base"></span>
+                        <span class="u-text-palette-2-base">Досрочное погашение</span> - изменение остатка вашего долга по кредиту перед банком.&nbsp; Это возврат части долга суммой больше ежемесячного платежа.<br>
+                        <br>Будтье осторожны с досрочным погашением. Информация об этом отправляется в бюро кредитных историй. Если вы постоянно гасите кредиты таким способом, то это может стать причиной отказа при рассмотрения заявки, так как банкам не выгодно такое сотруднечество.<br>
+                        <br>В общем случае досрочное погашение кредита для вас выгодно (уменьшает переплату по кредиту), но не выгодно для банка (лишается части прибыли).<br>Можно погасить кредит полностью или частично.<br>
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-2" id="sec-7ff1">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h2 class="u-align-left u-text u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500"> При досрочном погашении кредита :</h2>
+        <ul class="u-align-left u-custom-list u-text u-text-2">
+          <li>
+            <div class="u-list-icon u-text-palette-2-base">
+              <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-4f22" style="font-size: 1em; margin: -1em;"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+            </div>
+            <span style="font-weight: 700;">Не должно быть задолжности по кредиту.&nbsp;<span style="font-weight: 400;"></span>
+            </span>
+            <span style="font-size: 1.5rem;">Оплатите все задолжности, если они есть.</span>
+          </li>
+          <li>
+            <span style="font-weight: 700;"></span>
+            <div class="u-list-icon u-text-palette-2-base">
+              <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-4f22" style="font-size: 1em; margin: -1em;"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+            </div>
+            <span style="font-weight: 700;"> Правильная сумма.</span>
+            <span style="font-size: 1.5rem;"> Платите ежемесячный платёж + дополнительную сумму погашения.</span>
+          </li>
+          <li>
+            <div class="u-list-icon u-text-palette-2-base">
+              <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-4f22" style="font-size: 1em; margin: -1em;"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+            </div>
+            <span style="font-weight: 700;">Обязаны заявить.</span>
+            <span style="font-size: 1.5rem;">Оповестить банк о досрочном погашении не меньше, чем за 30 дней до внесения платежа.</span>
+            <br>
+          </li>
+          <li>
+            <div class="u-list-icon u-text-palette-2-base">
+              <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-4f22" style="font-size: 1em; margin: -1em;"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+            </div>
+            <span style="font-weight: 700;">Перечислить банку.</span>
+            <span style="font-size: 1.5rem;">Перечислить дополнительную сумму на счет банка, согласно заявлению. Дополнительную плату за досрочное погашения брать не должны.</span>
+            <br>
+          </li>
+          <li>
+            <div class="u-list-icon u-text-palette-2-base">
+              <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-4f22" style="font-size: 1em; margin: -1em;"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+            </div>
+            <span style="font-weight: 700;">Запросите справку у банка.</span>
+            <span style="font-size: 1.5rem;">Справку о выполнение вами всех кредитных обязательств, в случае полного погашения кредита. Если погашение частичное, банк должен пересчитать полную стоимость кредита и его срок.</span>
+            <br>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="u-align-left u-clearfix u-white u-section-3" id="sec-2d4e">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-align-left u-text u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500"> Типы платежей:</h2>
+        <div class="u-clearfix u-gutter-0 u-layout-wrap u-layout-wrap-1">
+          <div class="u-gutter-0 u-layout">
+            <div class="u-layout-col">
+              <div class="u-align-left u-container-style u-layout-cell u-size-20 u-layout-cell-1">
+                <div class="u-container-layout u-container-layout-1"><span class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-file-icon u-icon u-icon-circle u-palette-2-base u-text-white u-icon-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="0" data-animation-direction=""><img src="{{url_for('.static', filename='images/8067945-0a9de297.png')}}" alt=""></span>
+                  <h4 class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-text u-text-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500"> Аннуитетный</h4>
+                  <h4 class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-text u-text-3" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500"> Выплачиваете начисленные проценты, а не основной долг. Досрочное погашение выгодно в счёт снижения ежемесячных платежей</h4>
+                </div>
+              </div>
+              <div class="u-align-left u-container-style u-layout-cell u-size-20 u-layout-cell-2">
+                <div class="u-container-layout u-container-layout-2">
+                  <h4 class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-text u-text-4" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500"> Дифференцированный</h4><span class="u-align-left u-file-icon u-icon u-icon-circle u-palette-2-base u-text-white u-icon-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="0" data-animation-direction=""><img src="{{url_for('.static', filename='images/9387445-e9e6e8a1.png')}}" alt=""></span>
+                  <h4 class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-text u-text-5" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500"> Досрочное погашение уменьшает сумму основного долга. Тем самым уменьшает начисляемые проценты.</h4>
+                </div>
+              </div>
+              <div class="u-align-left u-container-style u-layout-cell u-size-20 u-layout-cell-3">
+                <div class="u-container-layout u-container-layout-3">
+                  <h4 class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-text u-text-6" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
+                    <span class="u-text-palette-2-base">Выгоднее </span>регулярно гасить кредит стабильно небольшими суммами, чем копить один большой платеж для полного досрочного погашения. <span class="u-text-palette-2-base">Проще</span> и <span class="u-text-palette-2-base">удобнее</span> вносить досрочку в день обязательного платежа.<br>
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-4" id="sec-0e73">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <a href="{{url_for('load_five_page')}}" class="u-border-none u-btn u-button-style u-hover-white u-palette-2-base u-btn-1">Пятый шаг</a>
+        <a href="{{url_for('load_seven_page')}}" class="u-border-none u-btn u-button-style u-hover-white u-palette-2-base u-btn-2">Седьмой шаг</a>
+      </div>
+    </section>
+    
+    
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-86f6"><div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">Дипломный проект</p>
+      </div></footer>
+    <section class="u-backlink u-clearfix u-grey-80">
+      <a class="u-link" href="https://nicepage.com/html-templates" target="_blank">
+        <span>HTML Website Templates</span>
+      </a>
+      <p class="u-text">
+        <span>created with</span>
+      </p>
+      <a class="u-link" href="https://nicepage.cloud" target="_blank">
+        <span>Best Website Builder</span>
+      </a>. 
+    </section>
+  
+</body></html>
+
+{% endblock %}

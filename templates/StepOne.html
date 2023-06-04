@@ -1,0 +1,175 @@
+{% extends "bootstrap/base.html" %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="ru"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <title>StepOne</title>
+        <link rel="stylesheet" href="{{url_for('.static', filename='nicepage.css')}}" media="screen">
+<link rel="stylesheet" href="{{url_for('.static', filename='StepOne.css')}}" media="screen">
+    <script class="u-script" type="text/javascript" src="{{url_for('.static', filename='jquery.js')}}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{{url_for('.static', filename='nicepage.js')}}" defer=""></script>
+    <meta name="generator" content="Nicepage 5.9.10, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i|PT+Sans:400,400i,700,700i">
+    
+    
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "Site6"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="StepOne">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <body class="u-body u-xl-mode" data-lang="ru"><header class="u-clearfix u-header u-white u-header" id="sec-3a80"><div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-sheet-1">
+        <nav class="u-menu u-menu-hamburger u-offcanvas u-menu-1" data-responsive-from="XL">
+          <div class="menu-collapse">
+            <a class="u-button-style u-nav-link" href="#" style="padding: 10px 8px; font-size: calc(1em + 20px);">
+              <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-8a5e"></use></svg>
+              <svg class="u-svg-content" version="1.1" id="svg-8a5e" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+            </a>
+          </div>
+                   <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-unstyled"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_main_page')}}">Главная</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_first_page')}}">Первый шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_second_page')}}">Второй шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_third_page')}}">Третий шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_fourth_page')}}">Четвертый шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_five_page')}}">Пятый шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_six_page')}}">Шестой шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_seven_page')}}" style="padding-right: 2px;">Седьмой шаг</a>
+</li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+<ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_main_page')}}">Главная</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_first_page')}}">Первый шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_second_page')}}">Второй шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_third_page')}}">Третий шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_fourth_page')}}">Четвертый шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_five_page')}}">Пятый шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_six_page')}}">Шестой шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_seven_page')}}">Седьмой шаг</a>
+</li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+      </div></header> 
+    <section class="u-clearfix u-palette-5-dark-3 u-section-1" id="sec-fc76">
+      <div class="u-palette-2-base u-shape u-shape-rectangle u-shape-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="250"></div>
+      <img class="u-image u-image-1" src="{{url_for('.static', filename='images/bussiness-people-working-team-office4.jpg')}}" data-image-width="1500" data-image-height="1000" data-animation-name="customAnimationIn" data-animation-duration="1000">
+      <div class="u-container-style u-group u-palette-5-dark-3 u-shape-rectangle u-group-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="250">
+        <div class="u-container-layout u-container-layout-1">
+          <h2 class="u-align-left u-text u-text-body-alt-color u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500"> Первый этап -&nbsp;<br>Определить вид кредита<br>
+          </h2>
+          <p class="u-align-left u-text u-text-grey-15 u-text-2">
+            <span class="u-text-palette-2-base">Кредит</span> - предоставление в долг денег или товаров на гарантированных условиях платности и возвратности, с уплатой процентов.<br>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-grey-10 u-section-2" id="sec-8fb1">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div class="u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-align-left u-container-style u-list-item u-radius-27 u-repeater-item u-shape-round u-white u-list-item-1">
+              <div class="u-container-layout u-similar-container u-container-layout-1">
+                <h4 class="u-text u-text-default u-text-palette-2-base u-text-1"> Потребительский кредит&nbsp;</h4>
+                <p class="u-text u-text-default u-text-2"> Выдается на приобретение конкретного товара или оплаты определенных услуг. Банк требует предоставить документ, подтверждающий покупку. Можно оформить как в банке так и в торговой точке. (Техника, мебель, лечение, путевка и т.д.)</p>
+              </div>
+            </div>
+            <div class="u-align-left u-container-style u-list-item u-radius-27 u-repeater-item u-shape-round u-video-cover u-white u-list-item-2">
+              <div class="u-container-layout u-similar-container u-container-layout-2">
+                <h4 class="u-text u-text-default u-text-palette-2-base u-text-3"> Автокредит</h4>
+                <p class="u-text u-text-default u-text-4"> Выдается физическому лицу на покупку автомобиля и других видов личного транспорта, с одновременным использованием его в качестве залога. Банк перечисляет деньги на счет автосалона. Если заемщие не сможет платить по кредиту, то банк продает транспорт, чтобы возместить ущерб. Ставки по кредиту ниже, чем по целевому. Так же банк потребует застраховать автомобиль, чтобы быть уверенным в сохранности залога.&nbsp;</p>
+              </div>
+            </div>
+            <div class="u-align-left u-container-style u-list-item u-radius-27 u-repeater-item u-shape-round u-video-cover u-white u-list-item-3">
+              <div class="u-container-layout u-similar-container u-container-layout-3">
+                <h4 class="u-text u-text-default u-text-palette-2-base u-text-5"> Кредит на развитие бизнеса</h4>
+                <p class="u-text u-text-default u-text-6"> Банк предоставляет денежный займ организации или индивидуальномк предпринимателю для развития их деятельности. Для заключения договора требуется объяснить в чем суть бизнеса, что конкретно нужно внедрить, сколько это стоит и с помощью каких средств будет погашаться кредит. Юридическому лицу выгоднее взять коммерческий кредит.</p>
+              </div>
+            </div>
+            <div class="u-align-left u-container-style u-list-item u-radius-27 u-repeater-item u-shape-round u-video-cover u-white u-list-item-4">
+              <div class="u-container-layout u-similar-container u-container-layout-4">
+                <h4 class="u-text u-text-default u-text-palette-2-base u-text-7"> Ипотека</h4>
+                <p class="u-text u-text-default u-text-8"> Долгосрочный заем на покупку недвижимости, при котором залогом становится приобретенный объект ( земля, квартира, дом и т.д.) Кредит выдается на длительный срок и требует предоставления документов о финансовом состоянии, оценки стоимости приобретаемого объекта оценщиком, обязательной страховки и превоначального взноса.</p>
+              </div>
+            </div>
+            <div class="u-align-left u-container-style u-list-item u-radius-27 u-repeater-item u-shape-round u-video-cover u-white u-list-item-5">
+              <div class="u-container-layout u-similar-container u-container-layout-5">
+                <h4 class="u-text u-text-default u-text-palette-2-base u-text-9"> Кредит на неотложные нужды</h4>
+                <p class="u-text u-text-default u-text-10">Можно получить в банке без объяснения цели. Средства могут быть потрачены на любые нужды. Такой кредит занимает больше времени на оформление документов, максимальная сумма долга меньше. Ставки, как правило, выше. Такой кредит выбирают, когда в банке нет подходящего целевого предложения. Для кредита без оформления документов и обращения в банк можно воспользоваться кредитной картой. <br>
+                  <br>Кредитная карта - банковская карта, денежные средства на которой принадлежат банку, который ее выдал. Максимальную сумму, плату за пользование и льготный период определяет банк.&nbsp;
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-section-3" id="sec-bbfc">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-text u-text-default u-text-1"> На этом этапе вам необходимо определиться. Чего хотите именно вы?</h2>
+        <div class="u-expanded-width u-gallery u-layout-grid u-lightbox u-show-text-on-hover u-gallery-1">
+          <div class="u-gallery-inner u-gallery-inner-1">
+            <div class="u-effect-fade u-gallery-item">
+              <div class="u-back-slide" data-image-width="1002" data-image-height="1500">
+                <img class="u-back-image u-expanded" src="{{url_for('.static', filename='images/full_C03Asymr.jpg')}}">
+              </div>
+              <div class="u-over-slide u-shading u-over-slide-1">
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
+              </div>
+            </div>
+            <div class="u-effect-fade u-gallery-item u-gallery-item-2">
+              <div class="u-back-slide" data-image-width="1500" data-image-height="1000">
+                <img class="u-back-image u-expanded u-back-image-2" src="{{url_for('.static', filename='images/full_ZYfYy1TY.jpg')}}">
+              </div>
+              <div class="u-over-slide u-shading u-over-slide-2">
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
+              </div>
+            </div>
+            <div class="u-effect-fade u-gallery-item u-gallery-item-3">
+              <div class="u-back-slide" data-image-width="1500" data-image-height="997">
+                <img class="u-back-image u-expanded u-back-image-3" src="{{url_for('.static', filename='images/full_jkqN2giA.jpg')}}">
+              </div>
+              <div class="u-over-slide u-shading u-over-slide-3">
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-4" id="sec-55d5">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <a href="{{url_for('load_main_page')}}" class="u-border-none u-btn u-button-style u-hover-white u-palette-2-base u-btn-1">Главная</a>
+        <a href="{{url_for('load_second_page')}}" class="u-border-none u-btn u-button-style u-hover-white u-palette-2-base u-btn-2">второй шаг</a>
+      </div>
+    </section>
+    
+    
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-86f6"><div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">Дипломный проект</p>
+      </div></footer>
+
+  
+</body></html>
+
+{% endblock %}

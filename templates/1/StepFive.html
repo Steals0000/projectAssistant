@@ -1,0 +1,487 @@
+{% extends "bootstrap/base.html" %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="ru"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>StepFive</title>
+    <link rel="stylesheet" href="{{url_for('.static', filename='nicepage.css')}}" media="screen">
+<link rel="stylesheet" href="{{url_for('.static', filename='StepFive.css')}}" media="screen">
+    <script class="u-script" type="text/javascript" src="{{url_for('.static', filename='jquery.js')}}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{{url_for('.static', filename='nicepage.js')}}" defer=""></script>
+    <meta name="generator" content="Nicepage 5.9.10, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i|PT+Sans:400,400i,700,700i">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "Site6"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="StepFive">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <body class="u-body u-xl-mode" data-lang="ru"><header class="u-clearfix u-header u-white u-header" id="sec-3a80"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <nav class="u-menu u-menu-hamburger u-offcanvas u-menu-1" data-responsive-from="XL">
+          <div class="menu-collapse">
+            <a class="u-button-style u-nav-link" href="#" style="padding: 10px 8px; font-size: calc(1em + 20px);">
+              <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-8a5e"></use></svg>
+              <svg class="u-svg-content" version="1.1" id="svg-8a5e" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-unstyled"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_main_page')}}">Главная</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_first_page')}}">Первый шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_second_page')}}">Второй шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_third_page')}}">Третий шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_fourth_page')}}">Четвертый шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_five_page')}}">Пятый шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_six_page')}}">Шестой шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_seven_page')}}" style="padding-right: 2px;">Седьмой шаг</a>
+</li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_main_page')}}">Главная</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_first_page')}}">Первый шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_second_page')}}">Второй шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_third_page')}}">Третий шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_fourth_page')}}">Четвертый шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_five_page')}}">Пятый шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_six_page')}}">Шестой шаг</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('load_seven_page')}}">Седьмой шаг</a>
+</li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+      </div></header> 
+    <section class="u-clearfix u-section-1" id="sec-7ff1">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-align-left u-text u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500"> Принять решение - седьмой этап</h2>
+        <ul class="u-align-left u-custom-list u-text u-text-2">
+          <li>
+            <span style="font-weight: 700;"></span>
+            <div class="u-list-icon u-text-palette-2-base">
+              <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-4f22" style="font-size: 1em; margin: -1em;"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+            </div> Знаете что вам нужно
+          </li>
+          <li>
+            <span style="font-weight: 700;"></span>
+            <div class="u-list-icon u-text-palette-2-base">
+              <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-4f22" style="font-size: 1em; margin: -1em;"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+            </div> Определились с суммой и сроком кредита
+          </li>
+          <li>
+            <span style="font-weight: 700;"></span>
+            <div class="u-list-icon u-text-palette-2-base">
+              <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-4f22" style="font-size: 1em; margin: -1em;"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+            </div>
+            <span style="font-weight: 700;">
+              <span style="font-weight: 700;">
+                <span style="font-weight: 400;">Имеете список банков, подходящих для вашей цели</span>
+              </span>
+              <br>
+            </span>
+          </li>
+          <li>
+            <div class="u-list-icon u-text-palette-2-base">
+              <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-4f22" style="font-size: 1em; margin: -1em;"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+            </div>
+            <span style="font-weight: 700;">
+              <span style="font-weight: 400;">Решили нужна ли вам страховка и какая</span>
+            </span>
+            <br>
+          </li>
+          <li>
+            <div class="u-list-icon u-text-palette-2-base">
+              <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-4f22" style="font-size: 1em; margin: -1em;"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+            </div>
+            <span style="font-weight: 400;"> Понимаете условия досрочного погашения и знаете как их использовать</span>
+            <br>
+          </li>
+        </ul>
+        <p class="u-align-left u-text u-text-palette-2-base u-text-3"> Осталось проанализировать данную информацию и выбрать банк, который удовлетворяет все ваши потребности.</p>
+        <p class="u-align-left u-text u-text-black u-text-4"> Пакет документов для кредитования зависит от вида кредитования и требований банка.</p>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-white u-section-2" id="sec-690c">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-align-left u-text u-text-black u-text-1"> Но вот стандартный пакет документов:</p>
+        <div class="u-accordion u-spacing-2 u-accordion-1">
+          <div class="u-accordion-item">
+            <a class="active u-accordion-link u-active-palette-2-light-2 u-button-style u-hover-palette-2-light-2 u-text-black u-white u-accordion-link-1" id="link-accordion-7c0e" aria-controls="accordion-7c0e" aria-selected="true">
+              <span class="u-accordion-link-text"> Потребительский кредит</span><span class="u-accordion-link-icon u-accordion-link-icon-hidden u-icon u-icon-circle u-text-palette-1-base u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 16 16" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-3277"></use></svg><svg class="u-svg-content" viewBox="0 0 16 16" x="0px" y="0px" id="svg-3277"><path d="M8,10.7L1.6,5.3c-0.4-0.4-1-0.4-1.3,0c-0.4,0.4-0.4,0.9,0,1.3l7.2,6.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l7.1-6
+	c0.4-0.4,0.4-0.9,0-1.3c-0.4-0.4-1-0.4-1.3,0L8,10.7z"></path></svg></span>
+            </a>
+            <div class="u-accordion-active u-accordion-pane u-align-left u-container-style u-accordion-pane-1" id="accordion-7c0e" aria-labelledby="link-accordion-7c0e">
+              <div class="u-container-layout u-container-layout-1">
+                <ul class="u-custom-list u-text u-text-2">
+                  <li>
+                    <div class="u-list-icon u-text-palette-2-base">
+                      <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-8ba4"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+                    </div>Заявка в банк на предоставление займа
+                  </li>
+                  <li>
+                    <div class="u-list-icon u-text-palette-2-base">
+                      <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-8ba4"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+                    </div>Внутренний паспорт гражданина РФ
+                  </li>
+                  <li>
+                    <div class="u-list-icon u-text-palette-2-base">
+                      <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-8ba4"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+                    </div>Свидетельство соцстрахования
+                  </li>
+                  <li>
+                    <div class="u-list-icon u-text-palette-2-base">
+                      <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-8ba4"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+                    </div>Индивидуальный номер налогоплательщика
+                  </li>
+                  <li>
+                    <div class="u-list-icon u-text-palette-2-base">
+                      <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-8ba4"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+                    </div>Копия трудовой книжки или трудового договора
+                  </li>
+                </ul>
+                <p class="u-text u-text-3">Так же документы, указывающие на состоятельность клиента. На основе этих данных устанавливаются размер займа и процентная ставка.<br>
+                  <br>Для подверждения дохода:<br>
+                </p>
+                <ul class="u-custom-list u-text u-text-4">
+                  <li>
+                    <div class="u-list-icon u-text-palette-2-base">
+                      <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-8ba4"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+                    </div>Справка по форме 2-НДФЛ — отражает доход и выплачиваемые с него налоги;
+                  </li>
+                  <li>
+                    <div class="u-list-icon u-text-palette-2-base">
+                      <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-8ba4"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+                    </div> Декларация 3-НДФЛ — актуальна для ИП и физлиц, зарабатывающих частной&nbsp; &nbsp;практикой;
+                  </li>
+                  <li>
+                    <div class="u-list-icon u-text-palette-2-base">
+                      <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-8ba4"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+                    </div>&nbsp;Справка по банковской форме — применима относительно клиентов, часть доходов&nbsp; &nbsp;которых скрыта от налогообложения;
+                  </li>
+                  <li>
+                    <div class="u-list-icon u-text-palette-2-base">
+                      <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-8ba4"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+                    </div>&nbsp;Выписка с карт-счета — может быть использована клиентами банка, получающими&nbsp; &nbsp;зарплату на пластиковую карту;
+                  </li>
+                  <li>
+                    <div class="u-list-icon u-text-palette-2-base">
+                      <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-8ba4"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+                    </div>&nbsp;Справка из ПФР или иного пенсионного фонда — по закону пенсия рассматривается в&nbsp; &nbsp;качестве критерия состоятельности.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item">
+            <a class="u-accordion-link u-active-palette-2-light-2 u-button-style u-hover-palette-2-light-2 u-text-black u-white u-accordion-link-2" id="link-accordion-05cb" aria-controls="accordion-05cb" aria-selected="false">
+              <span class="u-accordion-link-text"> Автокредит</span><span class="u-accordion-link-icon u-accordion-link-icon-hidden u-icon u-icon-circle u-text-palette-1-base u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 16 16" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-9e64"></use></svg><svg class="u-svg-content" viewBox="0 0 16 16" x="0px" y="0px" id="svg-9e64"><path d="M8,10.7L1.6,5.3c-0.4-0.4-1-0.4-1.3,0c-0.4,0.4-0.4,0.9,0,1.3l7.2,6.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l7.1-6
+	c0.4-0.4,0.4-0.9,0-1.3c-0.4-0.4-1-0.4-1.3,0L8,10.7z"></path></svg></span>
+            </a>
+            <div class="u-accordion-pane u-container-style u-accordion-pane-2" id="accordion-05cb" aria-labelledby="link-accordion-05cb">
+              <div class="u-container-layout u-valign-middle u-container-layout-2">
+                <ul class="u-custom-list u-text u-text-5">
+                  <li>
+                    <div class="u-list-icon u-text-palette-2-base">
+                      <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-8ba4"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+                    </div> Платежный договор с автосалоном
+                  </li>
+                  <li>
+                    <div class="u-list-icon u-text-palette-2-base">
+                      <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-8ba4"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+                    </div> Копия паспорта транспортного средства
+                  </li>
+                  <li>
+                    <div class="u-list-icon u-text-palette-2-base">
+                      <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-8ba4"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+                    </div> Страховой полис
+                  </li>
+                  <li>
+                    <div class="u-list-icon u-text-palette-2-base">
+                      <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-8ba4"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+                    </div> Свидетельство о первом взносе
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item">
+            <a class="u-accordion-link u-active-palette-2-light-2 u-button-style u-hover-palette-2-light-2 u-text-black u-white u-accordion-link-3" id="link-accordion-a6bb" aria-controls="accordion-a6bb" aria-selected="false">
+              <span class="u-accordion-link-text"> Ипотека</span><span class="u-accordion-link-icon u-accordion-link-icon-hidden u-icon u-icon-circle u-text-palette-1-base u-icon-3"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 16 16" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-7026"></use></svg><svg class="u-svg-content" viewBox="0 0 16 16" x="0px" y="0px" id="svg-7026"><path d="M8,10.7L1.6,5.3c-0.4-0.4-1-0.4-1.3,0c-0.4,0.4-0.4,0.9,0,1.3l7.2,6.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l7.1-6
+	c0.4-0.4,0.4-0.9,0-1.3c-0.4-0.4-1-0.4-1.3,0L8,10.7z"></path></svg></span>
+            </a>
+            <div class="u-accordion-pane u-container-style u-accordion-pane-3" id="accordion-a6bb" aria-labelledby="link-accordion-a6bb">
+              <div class="u-container-layout u-valign-middle u-container-layout-3">
+                <ul class="u-custom-list u-text u-text-6">
+                  <li>
+                    <div class="u-list-icon u-text-palette-2-base">
+                      <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-8ba4"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+                    </div>Заявка в банк на предоставление займа
+                  </li>
+                  <li>
+                    <div class="u-list-icon u-text-palette-2-base">
+                      <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-8ba4"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+                    </div>Внутренний паспорт гражданина РФ
+                  </li>
+                  <li>
+                    <div class="u-list-icon u-text-palette-2-base">
+                      <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-8ba4"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+                    </div>Свидетельство соцстрахования
+                  </li>
+                  <li>
+                    <div class="u-list-icon u-text-palette-2-base">
+                      <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-8ba4"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+                    </div>Индивидуальный номер налогоплательщика
+                  </li>
+                  <li>
+                    <div class="u-list-icon u-text-palette-2-base">
+                      <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-8ba4"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+                    </div>Копия трудовой книжки или трудового договора
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-color-scheme-u10 u-color-style-multicolor-1 u-section-3" id="sec-9f7b">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
+          <div class="u-gutter-0 u-layout">
+            <div class="u-layout-row">
+              <div class="u-size-31-sm u-size-31-xs u-size-35-lg u-size-35-xl u-size-60-md">
+                <div class="u-layout-col">
+                  <div class="u-align-left u-container-style u-layout-cell u-left-cell u-size-40 u-layout-cell-1">
+                    <div class="u-container-layout u-valign-top u-container-layout-1">
+                      <h2 class="u-text u-text-1"> Процедура банкротства!</h2>
+                    </div>
+                  </div>
+                  <div class="u-container-style u-image u-layout-cell u-left-cell u-size-20 u-image-1" src="" data-image-width="1500" data-image-height="1000">
+                    <div class="u-container-layout u-container-layout-2"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="u-size-25-lg u-size-25-xl u-size-29-sm u-size-29-xs u-size-60-md">
+                <div class="u-layout-col">
+                  <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-60 u-layout-cell-3">
+                    <div class="u-container-layout u-container-layout-3">
+                      <p class="u-text u-text-2">
+                        <span class="u-text-palette-2-base"></span>Сейчас процедурой <span class="u-text-palette-2-base">банкротства</span> могут воспользоваться  обычные люди. Банкротом человека правомерно называть в том случае, если его неспособность рассчитаться с кредиторами официально признал арбитражный суд.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="u-text u-text-default u-text-3"> В наше время очень много недобросовестной рекламы. Непроверенной и поверхностной информации. К сожалению, реклама в интернете часто обещает чуть ли не мгновенное освобождение от долгов и чуть ли не бесплатно. Это не так. Реклама преподносит <span class="u-text-palette-2-base">банкротство</span> как что-то легкое, состоящее из одних плюсов для гражданина. Это тоже не так.
+        </p>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-4" id="sec-ef36">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-align-left u-text u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500"> Любая судебная процедура <span class="u-text-palette-2-base">банкротства</span> это:
+        </h2>
+        <ul class="u-align-left u-custom-list u-text u-text-2">
+          <li>
+            <div class="u-list-icon u-text-palette-2-base">
+              <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-4f22" style="font-size: 1em; margin: -1em;"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+            </div>
+            <span style="font-weight: 700;"> Непросто</span>
+          </li>
+          <li>
+            <span style="font-weight: 700;"></span>
+            <div class="u-list-icon u-text-palette-2-base">
+              <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-4f22" style="font-size: 1em; margin: -1em;"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+            </div>
+            <span style="font-weight: 700;">
+              <span style="font-weight: 700;"></span>Долго
+            </span>
+          </li>
+          <li>
+            <div class="u-list-icon u-text-palette-2-base">
+              <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-4f22" style="font-size: 1em; margin: -1em;"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+            </div>
+            <span style="font-weight: 700;"></span>
+            <span style="font-weight: 700;">Имеет свои бонусы и издержки</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-5" id="carousel_2eeb">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h2 class="u-align-left u-text u-text-1">Процедура банкротства:</h2>
+        <ul class="u-align-left u-custom-list u-text u-text-2">
+          <li>
+            <div class="u-list-icon u-text-palette-2-base">
+              <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-4f22" style="font-size: 1em; margin: -1em;"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+            </div>
+            <span style="font-weight: 700;"> Заявление в суд.&nbsp;<span style="font-weight: 400; font-size: 1.5rem;"></span>
+            </span>
+            <span style="font-size: 1.5rem;"> О признании себя банкротом.</span>
+          </li>
+          <li>
+            <span style="font-weight: 700;"></span>
+            <div class="u-list-icon u-text-palette-2-base">
+              <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-4f22" style="font-size: 1em; margin: -1em;"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+            </div>
+            <span style="font-weight: 700;"> Решение суда.</span>
+            <span style="font-size: 1.5rem;">&nbsp; </span>
+            <span style="font-size: 1.5rem;">Решение суда, если вас признают банкротом: Процедура реализации иммущества (списание долга) или процедура рестректуризации долга.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-image u-shading u-section-6" src="" id="sec-2905" data-image-width="1500" data-image-height="1000">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-text u-text-default u-title u-text-1"> Банкротство не всегда равно списанию долгов.&nbsp;</h1>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-white u-section-7" id="sec-30ed">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-accordion u-spacing-2 u-accordion-1">
+          <div class="u-accordion-item">
+            <a class="active u-accordion-link u-active-palette-2-light-2 u-button-style u-hover-palette-2-light-2 u-text-black u-white u-accordion-link-1" id="link-accordion-05cb" aria-controls="accordion-05cb" aria-selected="true">
+              <span class="u-accordion-link-text">Минусы</span><span class="u-accordion-link-icon u-accordion-link-icon-hidden u-icon u-icon-circle u-text-palette-1-base u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 16 16" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-9e64"></use></svg><svg class="u-svg-content" viewBox="0 0 16 16" x="0px" y="0px" id="svg-9e64"><path d="M8,10.7L1.6,5.3c-0.4-0.4-1-0.4-1.3,0c-0.4,0.4-0.4,0.9,0,1.3l7.2,6.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l7.1-6
+	c0.4-0.4,0.4-0.9,0-1.3c-0.4-0.4-1-0.4-1.3,0L8,10.7z"></path></svg></span>
+            </a>
+            <div class="u-accordion-active u-accordion-pane u-container-style u-accordion-pane-1" id="accordion-05cb" aria-labelledby="link-accordion-05cb">
+              <div class="u-container-layout u-valign-middle u-container-layout-1">
+                <ul class="u-custom-list u-text u-text-1">
+                  <li>
+                    <div class="u-list-icon u-text-palette-2-base">
+                      <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-8ba4"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+                    </div> Сложность процедуры
+                  </li>
+                  <li>
+                    <div class="u-list-icon u-text-palette-2-base">
+                      <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-8ba4"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+                    </div> Траты на юриста (без него шансы небольшие)
+                  </li>
+                  <li>
+                    <div class="u-list-icon u-text-palette-2-base">
+                      <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-8ba4"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+                    </div> Последствия
+                  </li>
+                  <li>
+                    <div class="u-list-icon u-text-palette-2-base">
+                      <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-8ba4"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+                    </div> Все время процедуры банкротства гражданин не может распоряжаться своими личными финансовыми средствами и доходами – это делает финансовый управляющий
+                  </li>
+                  <li>
+                    <div class="u-list-icon u-text-palette-2-base">
+                      <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-8ba4"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+                    </div>Финансовый управляющий продает имущество должника на торгах<br>
+                  </li>
+                  <li>
+                    <div class="u-list-icon u-text-palette-2-base">
+                      <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-8ba4"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+                    </div>На время процедуры суд может наложить на гражданина – должника запрет на выезд за пределы страны<br>
+                  </li>
+                  <li>
+                    <div class="u-list-icon u-text-palette-2-base">
+                      <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-8ba4"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+                    </div>Нельзя открывать счета и депозиты в банках, совершать сделки<br>
+                  </li>
+                  <li>
+                    <div class="u-list-icon u-text-palette-2-base">
+                      <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-8ba4"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+                    </div>Банкротство – платная процедура<br>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item">
+            <a class="u-accordion-link u-active-palette-2-light-2 u-button-style u-hover-palette-2-light-2 u-text-black u-white u-accordion-link-2" id="link-accordion-a6bb" aria-controls="accordion-a6bb" aria-selected="false">
+              <span class="u-accordion-link-text">Плюсы</span><span class="u-accordion-link-icon u-accordion-link-icon-hidden u-icon u-icon-circle u-text-palette-1-base u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 16 16" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-7026"></use></svg><svg class="u-svg-content" viewBox="0 0 16 16" x="0px" y="0px" id="svg-7026"><path d="M8,10.7L1.6,5.3c-0.4-0.4-1-0.4-1.3,0c-0.4,0.4-0.4,0.9,0,1.3l7.2,6.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l7.1-6
+	c0.4-0.4,0.4-0.9,0-1.3c-0.4-0.4-1-0.4-1.3,0L8,10.7z"></path></svg></span>
+            </a>
+            <div class="u-accordion-pane u-container-style u-accordion-pane-2" id="accordion-a6bb" aria-labelledby="link-accordion-a6bb">
+              <div class="u-container-layout u-valign-middle u-container-layout-2">
+                <ul class="u-custom-list u-text u-text-2">
+                  <li>
+                    <div class="u-list-icon u-text-palette-2-base">
+                      <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-8ba4"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+                    </div> Освобождение гражданина от долговых обязательств
+                  </li>
+                  <li>
+                    <div class="u-list-icon u-text-palette-2-base">
+                      <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-8ba4"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+                    </div> Финансовый управляющий будет ежемесячно выделять Вам и Вашим иждивенцам средства на проживание и питание в размере среднего прожиточного минимума по региону
+                  </li>
+                  <li>
+                    <div class="u-list-icon u-text-palette-2-base">
+                      <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-8ba4"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+                    </div> С вами останется часть Вашего имущества, которым Вы можете пользоваться, как и раньше
+                  </li>
+                  <li>
+                    <div class="u-list-icon u-text-palette-2-base">
+                      <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-8ba4"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+                    </div> Исполнительные производства приостанавливаются или прекращаются
+                  </li>
+                  <li>
+                    <div class="u-list-icon u-text-palette-2-base">
+                      <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-8ba4"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+                    </div> Вы можете совершать юридические сделки, продавать и приобретать недвижимость, автотранспорт и т.д.
+                  </li>
+                  <li>
+                    <div class="u-list-icon u-text-palette-2-base">
+                      <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-8ba4"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="currentColor"></path></svg>
+                    </div>В случае острой необходимости Вы можете взять кредит<br>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-8" id="sec-e681">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <a href="{{url_for('load_fourth_page')}}" class="u-border-none u-btn u-button-style u-hover-white u-palette-2-base u-btn-1">Четвертый шаг</a>
+        <a href="{{url_for('load_six_page')}}" class="u-border-none u-btn u-button-style u-hover-white u-palette-2-base u-btn-2">Шестой шаг</a>
+      </div>
+    </section>
+    
+    
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-86f6"><div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">Дипломный проект</p>
+      </div></footer>
+    <section class="u-backlink u-clearfix u-grey-80">
+      <a class="u-link" href="https://nicepage.com/html-templates" target="_blank">
+        <span>HTML Website Templates</span>
+      </a>
+      <p class="u-text">
+        <span>created with</span>
+      </p>
+      <a class="u-link" href="https://nicepage.cloud" target="_blank">
+        <span>Best Website Builder</span>
+      </a>. 
+    </section>
+  
+</body></html>
+
+{% endblock %}
