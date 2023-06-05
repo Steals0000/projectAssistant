@@ -1,61 +1,21 @@
-from flask import render_template, redirect, url_for, Flask, request, json,flash
+from flask import render_template, redirect, url_for, request
 from flask_bootstrap import Bootstrap
-from flask_mail import Mail, Message
-import requests
 
-
-app = Flask(__name__)
-
-app.config['MAIL_SERVER'] = 'smtp.googlemail.com'
-app.config['MAIL_PORT'] = 587
-app.config['MAIL_USE_TLS'] = True
-app.config['MAIL_USERNAME'] = 'dlyaproekta.diplom@gmail.com'  # введите свой адрес электронной почты здесь
-app.config['MAIL_DEFAULT_SENDER'] = 'dlyaproekta.diplom@gmail.com'  # и здесь
-app.config['MAIL_PASSWORD'] = 'nynfdinwztnsnhuc'  # введите пароль
-
-mail = Mail(app)
+from config import app
+from mail_sender import MailSender
+from captcha_validator import CaptchaValidator
 
 bootstrap = Bootstrap(app)
 
-
-
-def send_message(name,email,text,message):
-    msg = Message("Отзыв", recipients=[app.config['MAIL_USERNAME']])
-    msg.body = "Вы получили отзыв от {}.\n\nИмя: {}\nПочта: {}\nТема: {}\nОтзыв: {}".format(name, name, email, text, message)
-    mail.send(msg)
-
-def is_human(captcha_response):
-    secret = "6LcaNWgmAAAAADJ4pENFVvC8vmEMyewBbOaU6o66"
-    payload = {'response':captcha_response, 'secret':secret}
-    response = requests.post("https://www.google.com/recaptcha/api/siteverify", payload)
-    response_text = json.loads(response.text)
-    return response_text['success']
-
 @app.route('/', methods=['GET', 'POST'])
 def load_main_page():
-    print('started')
-    sitekey = '6LcaNWgmAAAAALSefXhFyL1tGzPthk0bevcfTvl5'
+    captcha_validator = CaptchaValidator()
     if request.method == 'POST':
-        print('post')
-        name = request.form.get('name')
-        email = request.form.get('email')
-        text = request.form.get('text')
-        message = request.form.get('message')
-        captcha = request.form.get('g-recaptcha-response')
-        print(name)
-        print(email)
-        print(text)
-        print(message)
-        print(captcha)
-        send_message(name,email,text,message)
-        if is_human(captcha):
-            k = 't'
-            print(k)
-        else:
-            k = 'f'
-            print(k)
+        mail_send = MailSender()
+        mail_send.send_message(request.form.get('name'), request.form.get('email'), request.form.get('text'), request.form.get('message'))
+        captcha_validator.is_human(request.form.get('g-recaptcha-response'))
         return redirect(url_for('load_main_page'))
-    return render_template('Home.html', sitekey = sitekey)
+    return render_template('Home.html', sitekey = captcha_validator.sitekey)
 
 @app.route('/StepOne')
 def load_first_page():
@@ -86,5 +46,4 @@ def load_seven_page():
     return render_template('StepSeven.html')
 
 if __name__ == '__main__':
-    app.secret_key = 'asrtarstaursdlarsn'
     app.run(debug=True)
